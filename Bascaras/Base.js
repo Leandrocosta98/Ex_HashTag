@@ -2,9 +2,9 @@ let a1 = document.getElementById("valorA");
 let b1 = document.getElementById("valorB");
 let c1 = document.getElementById("valorC");
 
-const a = Number(a1);
-const b = Number(b1);
-const c = Number(c1);
+const a = (a1.value);
+const b = (b1.value);
+const c = (c1.value);
 
 function Baskara() {
     const delta = b ** 2 - 4 * a * c;
