@@ -1,17 +1,14 @@
-let a1 = document.getElementById("valorA");
-let b1 = document.getElementById("valorB");
-let c1 = document.getElementById("valorC");
-
-const a = (a1.value);
-const b = (b1.value);
-const c = (c1.value);
+let a = document.getElementById("valorA");
+let b = document.getElementById("valorB");
+let c = document.getElementById("valorC");
+let res = document.getElementById("res")
 
 function Baskara() {
-    const delta = b ** 2 - 4 * a * c;
-    const x1 = (-b + calcularRaiz(delta)) / (2 * a);
-    const x2 = (-b - calcularRaiz(delta)) / (2 * a);
+    const delta = (b.value ** 2 - 4 * a.value * c.value);
+    const x1 = (-b.value + calcularRaiz(delta)) / (2 * a.value);
+    const x2 = (-b.value - calcularRaiz(delta)) / (2 * a.value);
 
-    console.log(`O valor de x1 e x2 é: ${x1} e ${x2}`);
+    res.innerHTML = (`O valor de x1 e x2 é: ${x1.toFixed(2)} e ${x2.toFixed(2)}`);
 }
 
 function calcularRaiz(base) {

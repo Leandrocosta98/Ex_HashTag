@@ -9,9 +9,9 @@ function calcMedia() {
     const mediaDasNotas = (nota1 + nota2 + nota3)/3;
 
     if (mediaDasNotas < 7){
-        console.log(`Infelizmente a média do aluno foi ${mediaDasNotas}, o mesmo precisará realizar a prova final`);
+        console.log(`Infelizmente a média do aluno foi ${mediaDasNotas.toFixed(2)}, o mesmo precisará realizar a prova final`);
         const mediaFinal = (mediaDasNotas + provaFinal)/2;
-        console.log(`O resultado final do aluno foi ${mediaFinal}`)
+        console.log(`O resultado final do aluno foi ${mediaFinal.toFixed(2)}`)
     } 
     else{
         console.log(`A média desse aluno é: ${mediaDasNotas}, o aluno foi aprovado.`);
@@ -39,7 +39,7 @@ function calcValor() {
     let imp = (8.875 / 100) * valorProduto;
     let tot = (valorProduto + imp);
 
-    console.log(`O valor do produto é R$ ${valorProduto}, o imposto é R$ ${imp} e o total a ser pago será R$ ${tot}`);
+    console.log(`O valor do produto é R$ ${valorProduto}, o imposto é R$ ${imp.toFixed(2)} e o total a ser pago será R$ ${tot.toFixed(2)}`);
 }
 
 calcValor()
